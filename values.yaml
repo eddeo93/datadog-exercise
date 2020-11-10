@@ -141,7 +141,7 @@ datadog:
 
     # datadog.dogstatsd.nonLocalTraffic -- Enable this to make each node accept non-local statsd traffic
     ## ref: https://github.com/DataDog/docker-dd-agent#environment-variables
-    nonLocalTraffic: false
+    nonLocalTraffic: true
 
   # datadog.collectEvents -- Enables this to start event collection from the kubernetes API
   ## ref: https://docs.datadoghq.com/agent/kubernetes/#event-collection
