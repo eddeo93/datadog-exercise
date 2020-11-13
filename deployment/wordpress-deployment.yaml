@@ -55,6 +55,10 @@ spec:
             secretKeyRef:
               name: mysql-pass
               key: password
+        - name: DD_AGENT_HOST
+          valueFrom:
+            fieldRef:
+              fieldPath: status.hostIP    
         ports:
         - containerPort: 80
           name: wordpress
